@@ -1,0 +1,109 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fitness Tracker</h1>
+            <p>Track your workouts and calories burned</p>
+        </header>
+
+        <section class="input-section">
+            <h2>Add Workout</h2>
+            <form id="workout-form">
+                <input type="text" id="workout-name" placeholder="Workout Name" required>
+                <input type="number" id="calories-burned" placeholder="Calories Burned" required min="1">
+                <button type="submit">Add Workout</button>
+            </form>
+            <div class="total-calories">
+                <h3>Total Calories Burned: <span id="total-calories">0</span></h3>
+            </div>
+        </section>
+
+        <section class="workout-list">
+            <h2>Your Workouts</h2>
+            <ul id="workouts"></ul>
+        </section>
+
+        <section class="chart-section">
+            <h2>Calories Burned Chart</h2>
+            <canvas id="caloriesChart"></canvas>
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fitness Tracker</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="main-header">
+      <h1>💪 Fitness Tracker</h1>
+      <p>Monitor your workouts and calories burned in style</p>
+    </header>
+
+    <main>
+      <section class="input-section">
+        <h2>Add a Workout</h2>
+        <form id="workout-form" class="form">
+          <div class="form-group">
+            <label for="workout-name">Workout Name</label>
+            <input type="text" id="workout-name" name="workout-name" placeholder="e.g., Running" required />
+          </div>
+          <div class="form-group">
+            <label for="calories-burned">Calories Burned</label>
+            <input type="number" id="calories-burned" name="calories-burned" placeholder="e.g., 300" min="1" required />
+          </div>
+          <button type="submit" class="btn">Add Workout</button>
+        </form>
+        <div class="total-calories">
+          <h3>Total Calories Burned: <span id="total-calories">0</span> 🔥</h3>
+        </div>
+      </section>
+
+      <section class="workout-list-section">
+        <h2>Your Workouts</h2>
+        <ul id="workouts" class="workout-list"></ul>
+      </section>
+
+      <section class="chart-section">
+        <h2>Calories Burned Chart</h2>
+        <canvas id="caloriesChart"></canvas>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2025 Fitness Tracker. Built with 💙 by You.</p>
+    </footer>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
+
